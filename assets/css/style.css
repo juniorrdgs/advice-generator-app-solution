@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 28px;
+}
+
+:root{
+/*## Colors*/
+/*### Primary*/
+--lightCyan: hsl(193, 38%, 86%);
+--neonGreen: hsl(150, 100%, 66%);
+/*### Neutral*/
+--grayishBlue: hsl(217, 19%, 38%);
+--darkGrayishBlue: hsl(217, 19%, 24%);
+--darkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--darkBlue);
+}
+
+main {
+    width: 540px;
+    margin: auto;
+    margin-top: 220px;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--darkGrayishBlue);
+    border-radius: 15px;
+    padding: 50px 20px 20px 20px;
+}
+
+header h1 {
+    color: var(--neonGreen);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4.3px;
+    font-family: 'Manrope';
+}
+
+#adviceId {
+    color: inherit;
+    font: inherit;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.textArea {
+    color: var(--lightCyan);
+    padding: 25px 35px;
+    font-family: 'Manrope';
+    font-weight: 800;
+    transition: all ease .3s;
+}
+
+#adviceText {
+    color: var(--lightCyan); 
+    font-size: inherit;
+}
+
+.divider {
+    margin-top: 15px;
+}
+
+.adviceBtn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--neonGreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 220px;    
+    top: 50px;
+    cursor: pointer;
+}
+
+.adviceBtn:hover {
+    box-shadow: 0 0 30px var(--neonGreen);
+}
+
+.adviceBtn img {
+    width: 25px;
+    height: 25px;
+}
+
+
+@media(max-width: 600px) {
+    main {
+        width: 345px;
+        margin-top: 120px;
+    }
+
+    .container {
+        padding-top: 40px;        
+    }
+
+    header h1 {
+        font-size: 10px;
+    }
+
+    .textArea {
+        font-size: 23px;
+        padding: 13px;
+        padding-top: 25px;
+    }
+
+    .adviceBtn {
+        left: 120px;
+    }
+}
+
+@media (max-width: 325px) {
+    main {
+        width: 300px;
+    }
+
+    .adviceBtn {
+        left: 98px;
+    }
+}
